@@ -1,0 +1,53 @@
+$primary-color: #007bff;
+$secondary-color: #6610f2;
+$shadow-color: rgba(0, 0, 0, 0.2);
+$text-color-dark: #333;
+$text-color-light: #555;
+$font-family-main: 'Arial', sans-serif;
+$font-family-secondary: 'Helvetica', sans-serif;
+$font-family-tertiary: 'Verdana', sans-serif;
+$background-color: #f9f9f9;
+.custom-toolbar {
+  background: linear-gradient(to right, #007bff, #6610f2);
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.toolbar-title {
+  font-family: 'Arial', sans-serif;
+  color: white;
+  font-size: 20px;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  div {
+    margin: 20px;
+    padding: 20px;
+    background: $background-color;
+    box-shadow: 0 2px 10px $shadow-color;
+    border-radius: 5px;
+
+    &:hover{
+      box-shadow: 0 4px 15px $shadow-color;
+    }
+
+    h1 {
+      font-family: $font-family-secondary;
+      font-size: 32px;
+      color: $text-color-dark;
+    }
+
+    p {
+      font-family: $font-family-tertiary;
+      font-size: 16px;
+      line-height: 1.6;
+      color: $text-color-light;
+    }
+  }
+}
